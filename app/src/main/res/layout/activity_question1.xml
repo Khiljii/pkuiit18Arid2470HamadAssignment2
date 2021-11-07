@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="Hamad Raza"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit"
+        android:layout_below="@+id/text"
+        android:hint="EditText"
+        ></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit"
+        android:id="@+id/linear1">
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:id="@+id/box1"></CheckBox>
+        <CheckBox
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/box2"
+            android:text="No"></CheckBox>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/linear2"
+        android:layout_below="@+id/linear1">
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio1"
+            android:text="App"></RadioButton>
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio2"
+            android:text="Liniux"></RadioButton>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:layout_below="@+id/linear2"
+        android:src="@drawable/arid"
+        ></ImageView>
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"></ToggleButton>
+
+    <ImageButton
+        android:id="@+id/ibtn"
+        android:layout_width="215dp"
+        android:layout_height="211dp"
+        android:layout_below="@+id/toggle"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/a1" ></ImageButton>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibtn"
+        android:id="@+id/seekbar"
+        ></SeekBar>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btngoback"
+        android:layout_below="@+id/seekbar"
+        android:text="Back"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        ></Button>
+
+
+</RelativeLayout>
